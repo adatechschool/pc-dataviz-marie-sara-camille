@@ -12,7 +12,7 @@
 
 MATIN. On a décortiqué le code des animations prises sur zdog pour le comprendre et on a ajouté, en commentaires, le fruit de nos expérimentations (on en a ensuite tiré un fichier à part de tout ça)
 + ajout dans le code : changement de position du visage souriant dans la partie CSS
-+ résultat : on a deux visages mais qui ne s'affichent pas ensemble 
++ résultat : on a deux visages mais qui ne s'affichent pas ensemble = RESOLU !!
 
 APRES-MIDI. 
 
