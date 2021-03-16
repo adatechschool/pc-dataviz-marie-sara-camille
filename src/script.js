@@ -9,7 +9,7 @@ const eggplant = '#636';
 //Bonhomme à gauche
 
 const illo = new Zdog.Illustration({
-  element: '#zdog-canvas-1',
+  element: '#zdog-canvas',
   zoom: 15,
 }); 
 
@@ -20,6 +20,7 @@ var head = new Zdog.Shape({
   //On a mis stroke: 22 et ça a fait un carré
   stroke: 12,
   color: gold,
+  translate:{x:-15, y:10}
 }); 
 
 var eye = new Zdog.Ellipse({
@@ -52,29 +53,16 @@ new Zdog.Ellipse({
   stroke: 0.5,
   fill: true,
 });
-
-//fonction d'affichage
-function animate() {
-  illo.updateRenderGraph();
-  requestAnimationFrame( animate );
-}
-
-animate(); 
-
+ 
 //Bonhomme à droite
-
-const illoRight = new Zdog.Illustration({
-  element: '#zdog-canvas-2',
-  zoom: 15,
-}); 
-
 // ----- model ----- //
 
 var head2 = new Zdog.Shape({
-  addTo: illoRight,
+  addTo: illo,
   //On a mis stroke: 22 et ça a fait un carré
   stroke: 12,
   color: gold,
+  translate: { x:15, y:10},
 }); 
 
 var eye2 = new Zdog.Ellipse({
@@ -110,7 +98,7 @@ new Zdog.Ellipse({
 
 //fonction d'affichage
 function animate() {
-  illoRight.updateRenderGraph();
+  illo.updateRenderGraph();
   requestAnimationFrame( animate );
 }
 

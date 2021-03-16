@@ -1,16 +1,8 @@
-#zdog-canvas-1 {
+#zdog-canvas {
   background: #fdb;
   cursor: move;
   position: absolute;
   left: 5px;
-  bottom: 5px;
-} 
-
-#zdog-canvas-2 {
-  background: #fdb;
-  cursor: move;
-  position: absolute;
-  right: 5px;
   bottom: 5px;
 }  
 
