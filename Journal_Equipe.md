@@ -14,7 +14,9 @@ MATIN. On a décortiqué le code des animations prises sur zdog pour le comprend
 + ajout dans le code : changement de position du visage souriant dans la partie CSS
 + résultat : on a deux visages mais qui ne s'affichent pas ensemble = RESOLU !!
 
-# APRES-MIDI. 
+APRES-MIDI. On a fini les animations statiques : on a rajouté la femme et les bulles. Ensuite, on a compris comment convertir le CSV en JSON.
 
-On a fini les animations statiques : on a rajouté la femme et les bules. Ensuite, on a compris comment convertir le CSV en JSON.
+# MERCREDI 17 MARS
+
+APRES-MIDI. On a réussi à intégrer le fichier json au script.js avec fetch
 
