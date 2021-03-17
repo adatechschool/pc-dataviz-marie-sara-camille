@@ -155,8 +155,16 @@ function animate() {
 
 animate();
 
-//données:
-const fs = require("fs");
-let fichier = fs.readFileSync("data.json");
-let data = JSON.parse(fichier);
-console.log(data);
+//récupérer données du json:
+fetch("data.json",{
+  headers : { 
+    'Content-Type': 'application/json',
+    'Accept': 'application/json'
+   }
+ })
+    .then( (response) => {
+      return response.json();
+    }).then( (json) => {
+      //appeler ici la fonction du calcul du temps de parole des hommes
+      console.log(json);
+    });

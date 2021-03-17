@@ -1,3 +1,5 @@
+-créer une fonction qui calcule le temps de parole des hommes selon les années (base : la médiane totale)
+-devra-t-on créer un nouveau fichier ? nouvelle base de données ?
 -bulles de l'h et de la femme suivent l'evolution des données.
 -un compteur des années qui defilent.
 -a chaque changement d'année la taille des bulles respectives evolue.
