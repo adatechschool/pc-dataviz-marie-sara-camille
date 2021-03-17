@@ -1,0 +1,6 @@
+-bulles de l'h et de la femme suivent l'evolution des données.
+-un compteur des années qui defilent.
+-a chaque changement d'année la taille des bulles respectives evolue.
+-au centre des bulles le pourcentage de temps de parole s'affiche.
+-entre chaque changement d'année on prevoit un temps genre 2s.
+-les bouches sourient.

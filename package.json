@@ -1,0 +1,19 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Ce dépôt Git vous sert de base de travail pour les projets collectifs : en cliquant sur le lien fourni par l'encadrante, celui-ci sera automatiquement copié dans la dépôt que vous créerez pour ce projet.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adatechschool/pc-dataviz-marie-sara-camille.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adatechschool/pc-dataviz-marie-sara-camille/issues"
+  },
+  "homepage": "https://github.com/adatechschool/pc-dataviz-marie-sara-camille#readme"
+}
