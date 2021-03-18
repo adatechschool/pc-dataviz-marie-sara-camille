@@ -89,16 +89,16 @@ var womanSmile = new Zdog.Ellipse({
 
 //Speech
 
-// var womanBigBubble = new Zdog.RoundedRect({
-//   addTo: illustration,
-//   width: 20,
-//   height: 10,
-//   cornerRadius: 3,
-//   translate: { x: -20, y: -13, z: 10 },
-//   stroke: 0.5,
-//   color: "#EA0",
-//   dragRotate: true,
-// });
+var womanBigBubble = new Zdog.RoundedRect({
+  addTo: illustration,
+  width: 20,
+  height: 10,
+  cornerRadius: 3,
+  translate: { x: -20, y: -13, z: 10 },
+  stroke: 0.5,
+  color: "#EA0",
+  dragRotate: true,
+});
 
 var womanSmallBubble1 = new Zdog.Ellipse({
   addTo: illustration,
@@ -135,9 +135,9 @@ var manSmile = womanSmile.copy({
 });
 
 //Speech:
-// var manBigBubble = womanBigBubble.copy({
-//   translate: { x: 15, y: -10, z: 10 },
-// });
+var manBigBubble = womanBigBubble.copy({
+  translate: { x: 15, y: -10, z: 10 },
+});
 
 var manSmallBubble1 = womanSmallBubble1.copy({
   translate: { x: 18, y: -2, z: 10 },
@@ -150,67 +150,31 @@ var manSmallBubble2 = womanSmallBubble1.copy({
 //fonction d'affichage
 
 function animate() {
-<<<<<<< HEAD
-=======
-  var width = womanBigBubble.width;
-  function updateWomanBigBubble() {
-    //width = width + '%'
+  width = womanBigBubble.width;
+  console.log(width);
+  const updateWomanBigBubble = () => {
+    width = width + '%'
     width += 10
     if (width < 100) {
       
       requestAnimationFrame(animate);
     }
   }
->>>>>>> afb49259a55b5b33bb6ac7f53d22adea9ad77910
   illustration.updateRenderGraph();
-  requestAnimationFrame(animate);
 }
-requestAnimationFrame(updateWomanBigBubble);
 animate();
 
-<<<<<<< HEAD
-=======
 
-
->>>>>>> afb49259a55b5b33bb6ac7f53d22adea9ad77910
 //récupérer données du json:
-fetch("data.json", {
-  headers: {
-    "Content-Type": "application/json",
-    Accept: "application/json",
-  },
-})
-  .then((response) => {
-    return response.json();
-  })
-  .then((json) => {
-    //appeler ici la fonction du calcul du temps de parole des hommes
-    console.log(json);
-  });
-
-//test animation bulles faitezs en css
-document.getElementById("bulle").animate(
-  [
-    // keyframes
-    { transform: "scale(2,2)" },
-  ],
-  {
-    // timing options
-    duration: 1000,
-    iterations: Infinity,
-  }
-);
-
-//compteur des années des data:
-
-function printYear(year) {
-  setInterval(function () {
-    year = year + 1;
-    document.write(year);
-    document.write(" ");
-    //document.body.innerHTML = " ";
-  }, 2000);
-}
-// var annee = document.getElementById("annee");
-// annee.innerHTML = printYear(1995);
-printYear(1995);
+fetch("data.json",{
+  headers : { 
+    'Content-Type': 'application/json',
+    'Accept': 'application/json'
+   }
+ })
+    .then( (response) => {
+      return response.json();
+    }).then( (json) => {
+      //appeler ici la fonction du calcul du temps de parole des hommes
+      console.log(json);
+    });
