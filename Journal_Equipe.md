@@ -20,3 +20,14 @@ APRES-MIDI. On a fini les animations statiques : on a rajouté la femme et les b
 
 APRES-MIDI. On a réussi à intégrer le fichier json au script.js avec fetch
 
+# JEUDI 18 MARS
+
+MATIN. Recherches autour des fonctions requestAnimationFrame et animate. Marie a trouvé comment créer une forme géométrique (notre bulle) et la faire grandir en CSS. A aussi créé une boucle pour afficher les années, mais celles-ci apparaissent à la suite.
+
+APRES-MIDI. Replacement de la nouvelle bulle à la place des anciennes créées avec ZDog. Bug technique (push avec conflits) qui a pris près de 2h à être résolu.
+
+POUR LES PROCHAINS JOURS : 
+- faire apparaître les années au même endroit que le canvas (en superposition)
+- faire apparaître une seule année à la fois
+- faire changer la taille de la (les) bulle (s) en fonction des années
+- créer la fonction pour calculer le pourcentage du temps de parole des hommes
