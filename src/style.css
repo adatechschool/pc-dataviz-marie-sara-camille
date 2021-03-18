@@ -1,11 +1,13 @@
 #zdog-canvas {
-  background: #fdb;
-  cursor: move;
-  position: absolute;
-  left: 5px;
-  bottom: 5px;
-}  
-
-body {
-  background-color: #fdb;
-}
+    background: #fdb;
+    cursor: move;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    animation-name: animation1;
+    animation-duration: 2s;
+  }  
+  
+  body {
+    background-color: #fdb;
+  }
