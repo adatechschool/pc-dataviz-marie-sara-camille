@@ -150,10 +150,9 @@ var manSmallBubble2 = womanSmallBubble1.copy({
 //fonction d'affichage
 
 function animate() {
-  width = womanBigBubble.width;
-  console.log(width);
-  const updateWomanBigBubble = () => {
-    width = width + '%'
+  var width = womanBigBubble.width;
+  function updateWomanBigBubble() {
+    //width = width + '%'
     width += 10
     if (width < 100) {
       
@@ -162,7 +161,9 @@ function animate() {
   }
   illustration.updateRenderGraph();
 }
+requestAnimationFrame(updateWomanBigBubble);
 animate();
+
 
 
 //récupérer données du json:
