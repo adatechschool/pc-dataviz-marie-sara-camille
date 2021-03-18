@@ -148,12 +148,22 @@ var manSmallBubble2 = womanSmallBubble1.copy({
 });
 
 //fonction d'affichage
-function animate() {
-  illustration.updateRenderGraph();
-  requestAnimationFrame(animate);
-}
 
+function animate() {
+  width = womanBigBubble.width;
+  console.log(width);
+  const updateWomanBigBubble = () => {
+    width = width + '%'
+    width += 10
+    if (width < 100) {
+      
+      requestAnimationFrame(animate);
+    }
+  }
+  illustration.updateRenderGraph();
+}
 animate();
+
 
 //récupérer données du json:
 fetch("data.json",{
