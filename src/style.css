@@ -24,8 +24,11 @@ body {
 }
 
 #annee {
-  background-color: aqua;
-  margin-left: 50%;
+  font-size: 40px;
+  display: inline-block;
+  color: #636;
+  margin-top: 350px;
   margin-right: auto;
-  margin-bottom: 20%;
+  margin-left: 40%;
+  margin-bottom: 50px;
 }
