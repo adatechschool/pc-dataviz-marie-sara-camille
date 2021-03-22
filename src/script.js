@@ -155,6 +155,21 @@ function animate() {
 }
 animate();
 
+// //FONCTION COMPTEUR
+// var n = 2019; // Nombre final du compteur
+// var cpt = 1995; // Initialisation du compteur
+// var duree = 180; // Durée en seconde pendant laquel le compteur ira de 0 à 15
+// var delta = Math.ceil((duree * 15000) / n); // On calcule l'intervalle de temps entre chaque rafraîchissement du compteur (durée mise en milliseconde)
+// var node = document.getElementById("annee"); // On récupère notre noeud où sera rafraîchi la valeur du compteur
+// function countdown() {
+//   node.innerHTML = cpt++;
+//   // if (cpt < n) {
+//   //   // Si on est pas arrivé à la valeur finale, on relance notre compteur une nouvelle fois
+//   //   setTimeout(countdown, delta);
+//   // }
+// }
+// setTimeout(countdown, delta);
+
 //récupérer données du json:
 fetch("data.json", {
   headers: {
@@ -173,6 +188,10 @@ fetch("data.json", {
       console.log(value.Médiane);
       var x = value.Médiane / 50;
       var y = value.Médiane / 50;
+      var year = value.year;
+      console.log(year);
+      var node = document.getElementById("annee");
+      node.innerHTML = year;
       let bulle = document.getElementById("bulle");
       bulle.animate(
         [
@@ -201,16 +220,16 @@ fetch("data.json", {
 //   }
 // );
 
-var n = 2019; // Nombre final du compteur
-var cpt = 1995; // Initialisation du compteur
-var duree = 180; // Durée en seconde pendant laquel le compteur ira de 0 à 15
-var delta = Math.ceil((duree * 15000) / n); // On calcule l'intervalle de temps entre chaque rafraîchissement du compteur (durée mise en milliseconde)
-var node = document.getElementById("annee"); // On récupère notre noeud où sera rafraîchi la valeur du compteur
-function countdown() {
-  node.innerHTML = cpt++;
-  if (cpt < n) {
-    // Si on est pas arrivé à la valeur finale, on relance notre compteur une nouvelle fois
-    setTimeout(countdown, delta);
-  }
-}
-setTimeout(countdown, delta);
+// var n = 2019; // Nombre final du compteur
+// var cpt = 1995; // Initialisation du compteur
+// var duree = 180; // Durée en seconde pendant laquel le compteur ira de 0 à 15
+// var delta = Math.ceil((duree * 15000) / n); // On calcule l'intervalle de temps entre chaque rafraîchissement du compteur (durée mise en milliseconde)
+// var node = document.getElementById("annee"); // On récupère notre noeud où sera rafraîchi la valeur du compteur
+// function countdown() {
+//   node.innerHTML = cpt++;
+//   if (cpt < n) {
+//     // Si on est pas arrivé à la valeur finale, on relance notre compteur une nouvelle fois
+//     setTimeout(countdown, delta);
+//   }
+// }
+// setTimeout(countdown, delta);
