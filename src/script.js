@@ -183,13 +183,22 @@ fetch("data.json", {
   .then((json) => {
     //appeler ici la fonction du calcul du temps de parole des hommes
     console.log(json);
-    for (let i = 0; i < json.length; i++) {
-      let value = json[i];
-      console.log(value.Médiane);
-      var x = value.Médiane / 50;
-      var y = value.Médiane / 50;
-      var year = value.year;
-      console.log(year);
+
+   
+      for (let i = 0; i < json.length; i++) {
+        let value = json[i];
+        console.log(value.Médiane);
+        var x = value.Médiane / 50;
+        var y = value.Médiane / 50;
+        var year = value.year;
+        console.log(year);
+        display();
+        setTimeout(display, 1000);
+        
+      }
+      /* setTimeout(display, 1000); */
+    
+    function display(){
       var node = document.getElementById("annee");
       node.innerHTML = year;
       let bulle = document.getElementById("bulle");
@@ -204,8 +213,13 @@ fetch("data.json", {
           iterations: 1,
         }
       );
-    }
+      
+      }
+
+
   });
+  
+
 
 //test animation bulles faitezs en css
 // document.getElementById("bulle").animate(
