@@ -18,9 +18,7 @@ body {
   border-radius: 30px;
   border: 5px solid #ea0;
   width: 200px;
-  height: 150px;
-  animation-name: anim;
-  animation-duration: 4s;
+  height: 150px; 
 }
 
 #bulleH {
@@ -29,9 +27,7 @@ body {
   border-radius: 30px;
   border: 5px solid #ea0;
   width: 200px;
-  height: 150px;
-  animation-name: anim;
-  animation-duration: 4s;
+  height: 150px; 
 }
 
 #annee {

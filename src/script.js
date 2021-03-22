@@ -155,7 +155,7 @@ fetch("data.json", {
     if(compteur<json.length){
       console.log(json[compteur]);
       display(json[compteur].Médiane/50, json[compteur].Médiane/50,json[compteur].year);
-
+      displayH((100-json[compteur].Médiane)/50, (100-json[compteur].Médiane)/50, json[compteur].year);
       compteur++
     }
   }
@@ -175,10 +175,24 @@ fetch("data.json", {
       ],
       {
         // timing options
-        duration: 3000,
+        duration: 25000,
         iterations: 1, 
       }
     ); 
   }
 
-  
+  function displayH(x, y) {
+
+    let bulleH = document.getElementById("bulleH");
+    bulleH.animate(
+      [
+        // keyframes
+        { transform: `scale(${x},${y})` },
+      ],
+      {
+        // timing options
+        duration: 25000,
+        iterations: 1, 
+      }
+    ); 
+  }
