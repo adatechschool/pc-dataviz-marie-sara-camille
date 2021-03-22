@@ -171,28 +171,36 @@ fetch("data.json", {
     for (let i = 0; i < json.length; i++) {
       let value = json[i];
       console.log(value.Médiane);
+      var x = value.Médiane / 50;
+      var y = value.Médiane / 50;
+      let bulle = document.getElementById("bulle");
+      bulle.animate(
+        [
+          // keyframes
+          { transform: `scale(${x},${y})` },
+        ],
+        {
+          // timing options
+          duration: 3000,
+          iterations: 1,
+        }
+      );
     }
   });
 
 //test animation bulles faitezs en css
-document.getElementById("bulle").animate(
-  [
-    // keyframes
-    { transform: "scale(2,2)" },
-  ],
-  {
-    // timing options
-    duration: 1000,
-    iterations: Infinity,
-  }
-);
-// function printYear(year) {
-//   setInterval(function () {
-//     year = year + 1;
-//    var annee = document.getElementById("annee");
-//    annee.innerHTML = "1997";
-//   }, 2000);
-// }
+// document.getElementById("bulle").animate(
+//   [
+//     // keyframes
+//     { transform: "scale(2,2)" },
+//   ],
+//   {
+//     // timing options
+//     duration: 1000,
+//     iterations: Infinity,
+//   }
+// );
+
 var n = 2019; // Nombre final du compteur
 var cpt = 1995; // Initialisation du compteur
 var duree = 180; // Durée en seconde pendant laquel le compteur ira de 0 à 15
