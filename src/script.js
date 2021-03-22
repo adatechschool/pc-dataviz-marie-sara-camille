@@ -87,19 +87,6 @@ var womanSmile = new Zdog.Ellipse({
   fill: true,
 });
 
-//Speech
-
-// var womanBigBubble = new Zdog.RoundedRect({
-//   addTo: illustration,
-//   width: 20,
-//   height: 10,
-//   cornerRadius: 3,
-//   translate: { x: -20, y: -13, z: 10 },
-//   stroke: 0.5,
-//   color: "#EA0",
-//   dragRotate: true,
-// });
-
 var womanSmallBubble1 = new Zdog.Ellipse({
   addTo: illustration,
   diameter: 2,
@@ -134,11 +121,6 @@ var manSmile = womanSmile.copy({
   translate: { y: 2.5, z: 4.5 },
 });
 
-//Speech:
-// var manBigBubble = womanBigBubble.copy({
-//   translate: { x: 15, y: -10, z: 10 },
-// });
-
 var manSmallBubble1 = womanSmallBubble1.copy({
   translate: { x: 18, y: -2, z: 10 },
 });
@@ -155,21 +137,6 @@ function animate() {
 }
 animate();
 
-// //FONCTION COMPTEUR
-// var n = 2019; // Nombre final du compteur
-// var cpt = 1995; // Initialisation du compteur
-// var duree = 180; // Durée en seconde pendant laquel le compteur ira de 0 à 15
-// var delta = Math.ceil((duree * 15000) / n); // On calcule l'intervalle de temps entre chaque rafraîchissement du compteur (durée mise en milliseconde)
-// var node = document.getElementById("annee"); // On récupère notre noeud où sera rafraîchi la valeur du compteur
-// function countdown() {
-//   node.innerHTML = cpt++;
-//   // if (cpt < n) {
-//   //   // Si on est pas arrivé à la valeur finale, on relance notre compteur une nouvelle fois
-//   //   setTimeout(countdown, delta);
-//   // }
-// }
-// setTimeout(countdown, delta);
-
 //récupérer données du json:
 fetch("data.json", {
   headers: {
@@ -182,7 +149,6 @@ fetch("data.json", {
   })
   .then((json) => {
     //appeler ici la fonction du calcul du temps de parole des hommes
-
 
   var compteur = 0;
   function next(){
@@ -212,6 +178,7 @@ fetch("data.json", {
         duration: 3000,
         iterations: 1, 
       }
-      
     ); 
   }
+
+  
