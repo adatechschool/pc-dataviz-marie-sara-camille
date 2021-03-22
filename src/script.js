@@ -182,54 +182,36 @@ fetch("data.json", {
   })
   .then((json) => {
     //appeler ici la fonction du calcul du temps de parole des hommes
-    console.log(json);
-    for (let i = 0; i < json.length; i++) {
-      let value = json[i];
-      console.log(value.Médiane);
-      var x = value.Médiane / 50;
-      var y = value.Médiane / 50;
-      var year = value.year;
-      console.log(year);
-      var node = document.getElementById("annee");
-      node.innerHTML = year;
-      let bulle = document.getElementById("bulle");
-      bulle.animate(
-        [
-          // keyframes
-          { transform: `scale(${x},${y})` },
-        ],
-        {
-          // timing options
-          duration: 3000,
-          iterations: 1,
-        }
-      );
+
+
+  var compteur = 0;
+  function next(){
+    if(compteur<json.length){
+      console.log(json[compteur]);
+      display(json[compteur].Médiane/50, json[compteur].Médiane/50,json[compteur].year);
+
+      compteur++
     }
+  }
+                
+  setInterval(next, 1000);
   });
 
-//test animation bulles faitezs en css
-// document.getElementById("bulle").animate(
-//   [
-//     // keyframes
-//     { transform: "scale(2,2)" },
-//   ],
-//   {
-//     // timing options
-//     duration: 1000,
-//     iterations: Infinity,
-//   }
-// );
+  function display(x, y, year) {
+    var node = document.getElementById("annee");
+    node.innerHTML = year;
 
-// var n = 2019; // Nombre final du compteur
-// var cpt = 1995; // Initialisation du compteur
-// var duree = 180; // Durée en seconde pendant laquel le compteur ira de 0 à 15
-// var delta = Math.ceil((duree * 15000) / n); // On calcule l'intervalle de temps entre chaque rafraîchissement du compteur (durée mise en milliseconde)
-// var node = document.getElementById("annee"); // On récupère notre noeud où sera rafraîchi la valeur du compteur
-// function countdown() {
-//   node.innerHTML = cpt++;
-//   if (cpt < n) {
-//     // Si on est pas arrivé à la valeur finale, on relance notre compteur une nouvelle fois
-//     setTimeout(countdown, delta);
-//   }
-// }
-// setTimeout(countdown, delta);
+    let bulle = document.getElementById("bulle");
+    bulle.animate(
+      [
+        // keyframes
+        { transform: `scale(${x},${y})` },
+      ],
+      {
+        // timing options
+        duration: 3000,
+        iterations: 1, 
+      }
+      
+    ); 
+  }
