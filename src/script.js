@@ -168,6 +168,10 @@ fetch("data.json", {
   .then((json) => {
     //appeler ici la fonction du calcul du temps de parole des hommes
     console.log(json);
+    for (let i = 0; i < json.length; i++) {
+      let value = json[i];
+      console.log(value.Médiane);
+    }
   });
 
 //test animation bulles faitezs en css
