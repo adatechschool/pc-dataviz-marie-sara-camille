@@ -34,4 +34,10 @@ POUR LES PROCHAINS JOURS :
 
 # LUNDI 22 MARS
 
-Travail sur l'affichage en parallèle de la croissance de la bulle et des années (beaucoup de pistes, peu de solutions).
+Travail sur l'affichage en parallèle de la croissance de la bulle et des années (beaucoup de pistes creusées).
+En fin de journée, création des fonctions display, next et setInterval qui agissent en même temps.
+
+DEMAIN :
+- créer ID dans l'onglet HTML pour afficher le pourcentage du temps de parole des femmes
+- positionner ce pourcentage dans le canvas
+- positionner un peu plus haut l'affichage de l'année
