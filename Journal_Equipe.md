@@ -31,3 +31,7 @@ POUR LES PROCHAINS JOURS :
 - faire apparaître une seule année à la fois
 - faire changer la taille de la (les) bulle (s) en fonction des années
 - créer la fonction pour calculer le pourcentage du temps de parole des hommes
+
+# LUNDI 22 MARS
+
+Travail sur l'affichage en parallèle de la croissance de la bulle et des années (beaucoup de pistes, peu de solutions).
