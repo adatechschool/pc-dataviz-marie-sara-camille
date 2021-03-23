@@ -16,7 +16,7 @@ body {
   border-radius: 30px;
   border: 5px solid #ea0;
   width: 200px;
-  height: 150px; 
+  height: 150px;
 }
 
 #bulleH {
@@ -25,7 +25,7 @@ body {
   border-radius: 30px;
   border: 5px solid #ea0;
   width: 200px;
-  height: 150px; 
+  height: 150px;
 }
 
 #annee {
@@ -58,8 +58,17 @@ body {
   margin-bottom: 40px;
 }
 
-#pourcentage {
-  font-size: 35px;
+#pourcentageF {
+  font-size: 40px;
+  display: inline-block;
+  color: #636;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: 50%;
+  margin-bottom: 40px;
+}
+#pourcentageH {
+  font-size: 40px;
   display: inline-block;
   color: #636;
   margin-top: 100px;

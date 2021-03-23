@@ -150,54 +150,65 @@ fetch("data.json", {
   .then((json) => {
     //appeler ici la fonction du calcul du temps de parole des hommes
 
-  var compteur = 0;
-  function next(){
-    if(compteur<json.length){
-      console.log(json[compteur]);
-      display(json[compteur].Médiane/50, json[compteur].Médiane/50,json[compteur].year);
-      displayH((100-json[compteur].Médiane)/50, (100-json[compteur].Médiane)/50, json[compteur].year);
-      compteur++
+    var compteur = 0;
+    function next() {
+      if (compteur < json.length) {
+        console.log(json[compteur]);
+        displayWoman(
+          json[compteur].Médiane / 50,
+          json[compteur].Médiane / 50,
+          json[compteur].year,
+          json[compteur].Médiane
+        );
+        displayMan(
+          (100 - json[compteur].Médiane) / 50,
+          (100 - json[compteur].Médiane) / 50,
+          json[compteur].year,
+          100 - json[compteur].Médiane
+        );
+
+        compteur++;
+      }
     }
-  }
-                
-  setInterval(next, 1000);
+
+    setInterval(next, 1000);
   });
 
-  function display(x, y, year) {
-    var node = document.getElementById("annee");
-    node.innerHTML = year;
+function displayWoman(x, y, year, data) {
+  var node = document.getElementById("annee");
+  node.innerHTML = year;
 
-    let bulle = document.getElementById("bulle");
-    bulle.animate(
-      [
-        // keyframes
-        { transform: `scale(${x},${y})` },
-      ],
-      {
-        // timing options
-        duration: 1000,
-        iterations: 1, 
-      }
-    ); 
-  }
+  let bulle = document.getElementById("bulle");
+  bulle.animate(
+    [
+      // keyframes
+      { transform: `scale(${x},${y})` },
+    ],
+    {
+      // timing options
+      duration: 1000,
+      iterations: 1,
+    }
+  );
+  var pourcentage = document.getElementById("pourcentageF");
 
-  function displayH(x, y) {
+  pourcentage.innerHTML = data.toFixed(2) + "%";
+}
 
-    let bulleH = document.getElementById("bulleH");
-    bulleH.animate(
-      [
-        // keyframes
-        { transform: `scale(${x},${y})` },
-      ],
-      {
-        // timing options
-        duration: 1000,
-        iterations: 1, 
-      }
-    ); 
-  }
+function displayMan(x, y, year, data) {
+  let bulleH = document.getElementById("bulleH");
+  bulleH.animate(
+    [
+      // keyframes
+      { transform: `scale(${x},${y})` },
+    ],
+    {
+      // timing options
+      duration: 1000,
+      iterations: 1,
+    }
+  );
+  var pourcentageH = document.getElementById("pourcentageH");
 
-function displayPourcentF() {
-  var pourcentage = document.getElementById("pourcentage");
-  pourcentage.innerHTML = (json[compteur].Médiane);
+  pourcentageH.innerHTML = data.toFixed(2) + "%";
 }
