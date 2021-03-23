@@ -41,3 +41,18 @@ DEMAIN :
 - créer ID dans l'onglet HTML pour afficher le pourcentage du temps de parole des femmes
 - positionner ce pourcentage dans le canvas
 - positionner un peu plus haut l'affichage de l'année
+
+# MARDI 23 MARS
+
+Liste des actions de la journée (dans le désordre) :
+- création de la bulle de l'homme
+- création de la fonction qui permet d'afficher les pourcentages dans les deux bulles
+- insertion d'une nouvelle police pour le texte (Trebuchet MS)
+- rajout du titre et de la source des données
+- repositionnement des éléments dans la page
+- création de class en CSS pour gagner des lignes de code dans le fichier CSS
+- débug des transitions saccadées de la croissance des bulles : elles sont maintenant plus fluides, grâce à la méthode "fill : "forwards""
+
+DEMAIN :
+- améliorer encore la disposition des éléments dans la page avec Flexbox
+- ajouter de l'épaisseur à la bulle de la femme
