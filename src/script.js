@@ -137,7 +137,8 @@ function animate() {
 }
 animate();
 
-//récupérer données du json:
+//récupérer données du json
+
 fetch("data.json", {
   headers: {
     "Content-Type": "application/json",
@@ -148,21 +149,20 @@ fetch("data.json", {
     return response.json();
   })
   .then((json) => {
-    //appeler ici la fonction du calcul du temps de parole des hommes
 
     var compteur = 0;
     function next() {
       if (compteur < json.length) {
         console.log(json[compteur]);
         displayWoman(
-          json[compteur].Médiane / 50,
-          json[compteur].Médiane / 50,
+          json[compteur].Médiane / 40,
+          json[compteur].Médiane / 40,
           json[compteur].year,
           json[compteur].Médiane
         );
         displayMan(
-          (100 - json[compteur].Médiane) / 50,
-          (100 - json[compteur].Médiane) / 50,
+          (100 - json[compteur].Médiane) / 40,
+          (100 - json[compteur].Médiane) / 40,
           json[compteur].year,
           100 - json[compteur].Médiane
         );
@@ -188,10 +188,11 @@ function displayWoman(x, y, year, data) {
       // timing options
       duration: 1000,
       iterations: 1,
+      fill: "forwards",
     }
   );
-  var pourcentage = document.getElementById("pourcentageF");
 
+  var pourcentage = document.getElementById("pourcentageF");
   pourcentage.innerHTML = data.toFixed(2) + "%";
 }
 
@@ -206,9 +207,10 @@ function displayMan(x, y, year, data) {
       // timing options
       duration: 1000,
       iterations: 1,
+      fill: "forwards",
     }
   );
-  var pourcentageH = document.getElementById("pourcentageH");
 
+  var pourcentageH = document.getElementById("pourcentageH");
   pourcentageH.innerHTML = data.toFixed(2) + "%";
 }
