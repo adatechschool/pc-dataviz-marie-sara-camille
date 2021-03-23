@@ -27,7 +27,7 @@ var womanHair = new Zdog.Ellipse({
   diameter: 14,
   quarters: 2,
   //position x et y de l'oeil gauche
-  translate: { y: -0.5, z: 4.5 },
+  translate: { y: -0.5 },
   //sens de rotation de l'oeil gauche
   rotate: { z: -TAU / 4 },
   color: eggplant,
@@ -38,7 +38,7 @@ var womanFringe = new Zdog.Ellipse({
   addTo: womanHead,
   diameter: 10,
   quarters: 2,
-  translate: { y: -3, z: 3 },
+  translate: { y: -3 },
   rotate: { z: -TAU / 4 },
   closed: true,
   color: eggplant,
@@ -63,7 +63,7 @@ var womanLeftEye = new Zdog.Ellipse({
   addTo: womanHead,
   diameter: 2,
   quarters: 2,
-  translate: { x: -2, y: 1, z: 4.5 },
+  translate: { x: -2, y: 1 },
   rotate: { z: -TAU / 4 },
   color: eggplant,
   //épaisseur sourcils
@@ -71,14 +71,14 @@ var womanLeftEye = new Zdog.Ellipse({
 });
 
 var womanRightEye = womanLeftEye.copy({
-  translate: { x: 2, y: 1, z: 4.5 },
+  translate: { x: 2, y: 1 },
 });
 
 var womanSmile = new Zdog.Ellipse({
   addTo: womanHead,
   diameter: 3,
   quarters: 2,
-  translate: { y: 2.5, z: 4.5 },
+  translate: { y: 2.5 },
   rotate: { z: TAU / 4 },
   //forme de la bouche:
   closed: true,
@@ -90,13 +90,13 @@ var womanSmile = new Zdog.Ellipse({
 var womanSmallBubble1 = new Zdog.Ellipse({
   addTo: illustration,
   diameter: 2,
-  translate: { x: -18, y: -5, z: 10 },
+  translate: { x: -18, y: -5 },
   stroke: 0.5,
   color: "#EA0",
 });
 
 var womanSmallBubble2 = womanSmallBubble1.copy({
-  translate: { x: -19, y: -1, z: 10 },
+  translate: { x: -19, y: -1 },
 });
 
 //Bonhomme à droite
@@ -108,25 +108,25 @@ var manHead = womanHead.copy({
 
 var manLeftEye = womanLeftEye.copy({
   addTo: manHead,
-  translate: { x: -2, y: 1, z: 4.5 },
+  translate: { x: -2, y: 1 },
 });
 
 var manRighteye = womanLeftEye.copy({
   addTo: manHead,
-  translate: { x: 2, y: 1, z: 4.5 },
+  translate: { x: 2, y: 1},
 });
 
 var manSmile = womanSmile.copy({
   addTo: manHead,
-  translate: { y: 2.5, z: 4.5 },
+  translate: { y: 2.5 },
 });
 
 var manSmallBubble1 = womanSmallBubble1.copy({
-  translate: { x: 18, y: -2, z: 10 },
+  translate: { x: 22, y: -2 },
 });
 
 var manSmallBubble2 = womanSmallBubble1.copy({
-  translate: { x: 20, y: 2, z: 10 },
+  translate: { x: 24, y: 2 },
 });
 
 //fonction d'affichage
@@ -171,7 +171,7 @@ fetch("data.json", {
       }
     }
 
-    setInterval(next, 1000);
+    setInterval(next, 1500);
   });
 
 function displayWoman(x, y, year, data) {
@@ -186,7 +186,7 @@ function displayWoman(x, y, year, data) {
     ],
     {
       // timing options
-      duration: 1000,
+      duration: 1500,
       iterations: 1,
       fill: "forwards",
     }
@@ -205,7 +205,7 @@ function displayMan(x, y, year, data) {
     ],
     {
       // timing options
-      duration: 1000,
+      duration: 1500,
       iterations: 1,
       fill: "forwards",
     }

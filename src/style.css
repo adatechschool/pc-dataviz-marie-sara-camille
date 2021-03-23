@@ -10,27 +10,27 @@
 body {
   background-color: #fdb;
 }
-#bulle {
-  margin-left: 250px;
-  margin-top: 5px;
+
+.styleBulle {
   border-radius: 30px;
   border: 5px solid #ea0;
   width: 200px;
   height: 150px;
 }
+#bulle {
+  margin-left: 250px;
+  margin-top: 5px;
+}
 
 #bulleH {
-  margin-left: 630px;
+  margin-left: 600px;
   margin-top: 0px;
   margin-bottom: 200px;
-  border-radius: 30px;
-  border: 5px solid #ea0;
-  width: 200px;
-  height: 150px;
 }
 
 #annee {
   font-size: 40px;
+  font-family: 'Trebuchet MS';
   display: inline-block;
   color: #636;
   margin-top: 0px;
@@ -41,6 +41,8 @@ body {
 
 #titre {
   font-size: 35px;
+  font-family: 'Trebuchet MS';
+  font-weight: bold;
   display: inline-block;
   color: #636;
   margin-top: 20px;
@@ -50,7 +52,8 @@ body {
 }
 
 #source {
-  font-size: 15px;
+  font-size: 20px;
+  font-family: 'Trebuchet MS';
   display: inline-block;
   color: #636;
   margin-top: 0px;
@@ -59,22 +62,17 @@ body {
   margin-bottom: 40px;
 }
 
-#pourcentageF {
+.stylePourcentage {
   font-size: 40px;
+  font-family: 'Trebuchet MS';
   display: inline-block;
   color: #636;
-  margin-top: 55px;
+  margin-top: 27%;
   margin-right: auto;
-  margin-left: 23%;
+  margin-left: 19%;
   margin-bottom: 40px;
 }
 
-#pourcentageH {
-  font-size: 40px;
-  display: inline-block;
-  color: #636;
-  margin-top: 55px;
-  margin-right: auto;
-  margin-left: 23%;
-  margin-bottom: 40px;
+#pourcentageF {
+  font-weight: bold;
 }
