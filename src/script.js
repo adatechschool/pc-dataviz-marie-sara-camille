@@ -196,3 +196,8 @@ fetch("data.json", {
       }
     ); 
   }
+
+function displayPourcentF() {
+  var pourcentage = document.getElementById("pourcentage");
+  pourcentage.innerHTML = (json[compteur].Médiane);
+}

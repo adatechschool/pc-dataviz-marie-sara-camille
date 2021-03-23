@@ -57,3 +57,13 @@ body {
   margin-left: 0%;
   margin-bottom: 40px;
 }
+
+#pourcentage {
+  font-size: 35px;
+  display: inline-block;
+  color: #636;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: 50%;
+  margin-bottom: 40px;
+}
