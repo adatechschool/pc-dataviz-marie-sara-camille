@@ -4,8 +4,6 @@
   position: absolute;
   left: 5px;
   bottom: 5px;
-  animation-name: animation1;
-  animation-duration: 2s;
   z-index: -1;
 }
 

@@ -175,7 +175,7 @@ fetch("data.json", {
       ],
       {
         // timing options
-        duration: 25000,
+        duration: 1000,
         iterations: 1, 
       }
     ); 
@@ -191,7 +191,7 @@ fetch("data.json", {
       ],
       {
         // timing options
-        duration: 25000,
+        duration: 1000,
         iterations: 1, 
       }
     ); 
