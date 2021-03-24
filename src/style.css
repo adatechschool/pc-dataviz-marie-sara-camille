@@ -1,6 +1,7 @@
 #zdog-canvas {
   background: #fdb;
   cursor: move;
+  display: block;
   position: absolute;
   left: 5px;
   bottom: 5px;
@@ -16,7 +17,9 @@ body {
   border: 5px solid #ea0;
   width: 200px;
   height: 150px;
+  position: relative;
 }
+
 #bulle {
   margin-left: 250px;
   margin-top: 5px;
@@ -32,6 +35,7 @@ body {
   font-size: 40px;
   font-family: 'Trebuchet MS';
   display: inline-block;
+  position: relative;
   color: #636;
   margin-top: 0px;
   margin-right: auto;
@@ -44,6 +48,7 @@ body {
   font-family: 'Trebuchet MS';
   font-weight: bold;
   display: inline-block;
+  position: relative;
   color: #636;
   margin-top: 20px;
   margin-right: auto;
@@ -56,6 +61,7 @@ body {
   font-family: 'Trebuchet MS';
   display: inline-block;
   color: #636;
+  position: relative;
   margin-top: 0px;
   margin-right: auto;
   margin-left: 0%;

@@ -132,7 +132,7 @@ var manSmallBubble2 = womanSmallBubble1.copy({
 //fonction d'affichage
 
 function animate() {
-  requestAnimationFrame(animate);
+//  requestAnimationFrame(animate);
   illustration.updateRenderGraph();
 }
 animate();
