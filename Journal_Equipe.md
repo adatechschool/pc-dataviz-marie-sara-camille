@@ -56,3 +56,9 @@ Liste des actions de la journée (dans le désordre) :
 DEMAIN :
 - améliorer encore la disposition des éléments dans la page avec Flexbox
 - ajouter de l'épaisseur à la bulle de la femme
+
+# MERCREDI 24 MARS
+
+MATIN. Masterclass avec une deputy CTO du Groupe La Centrale.
+
+APRES-MIDI. Insertion de "position: relative" ou "position: absolute" dans le code CSS pour tenter de résoudre ce problème d'agencement + recherches autour de ce souci.
