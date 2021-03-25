@@ -65,4 +65,7 @@ APRES-MIDI. Insertion de "position: relative" ou "position: absolute" dans le co
 
 # JEUDI 25 MARS
 
-MATIN. Rétrospective!
+MATIN. Rétrospective !
+Encore des recherches sur le positionnement des éléments dans la page web.
+
+APRES-MIDI. Démo !
