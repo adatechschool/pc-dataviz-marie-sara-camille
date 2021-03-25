@@ -62,3 +62,7 @@ DEMAIN :
 MATIN. Masterclass avec une deputy CTO du Groupe La Centrale.
 
 APRES-MIDI. Insertion de "position: relative" ou "position: absolute" dans le code CSS pour tenter de résoudre ce problème d'agencement + recherches autour de ce souci.
+
+# JEUDI 25 MARS
+
+MATIN. Rétrospective!
